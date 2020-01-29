@@ -1,5 +1,7 @@
 # ImageNet training in PyTorch
 
+CAUTION: this is the original readme from [PyTorch examples](https://github.com/pytorch/examples/tree/master/imagenet) for your reference. Please refer to [OCCN's readme](https://github.com/samaonline/Orthogonal-Convolutional-Neural-Networks/blob/master/README.md) for more instructions.
+
 This implements training of popular model architectures, such as ResNet, AlexNet, and VGG on the ImageNet dataset.
 
 ## Requirements
