@@ -29,7 +29,7 @@ python main_orth50.py --dist-url 'tcp://127.0.0.1:1321' --dist-backend 'nccl' --
 The current code supports multi-GPU settings.
 
 ## License and Citation
-The use of this software is released under [BSD-3](https://github.com/zhmiao/OpenLongTailRecognition-OLTR/blob/master/LICENSE).
+The use of this software is released under [BSD-3](https://github.com/samaonline/Orthogonal-Convolutional-Neural-Networks/LICENSE).
 ```
 @article{wang2019orthogonal,
   title={Orthogonal Convolutional Neural Networks},
