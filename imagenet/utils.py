@@ -1,6 +1,7 @@
 """ helper function
 
-author baiyu
+original author baiyu
+modified by Peter Wang (@samaoline)
 """
 
 import sys
