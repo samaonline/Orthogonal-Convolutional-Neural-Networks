@@ -18,7 +18,7 @@ We use imagenet classificaiton as an example. The users can also change the data
 
 - Navigate to "imagenet" folder.
 
-- We now support orthogonal convolutions for resnet34 and resnet50. You can run resnet34 on imagenet using the following command. 
+- We now support orthogonal convolutions for resnet34 and resnet50. You can run resnet50 on imagenet using the following command. 
 ```
 python main_orth50.py --dist-url 'tcp://127.0.0.1:1321' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 -a resnet50 -j 4 -r 0.5 -b 220 /data/ILSVRC2012 --print-freq 200
 ```
