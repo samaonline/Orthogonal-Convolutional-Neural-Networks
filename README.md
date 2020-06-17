@@ -28,13 +28,16 @@ python main_orth50.py --dist-url 'tcp://127.0.0.1:1321' --dist-backend 'nccl' --
 ## Note
 The current code supports multi-GPU settings.
 
+## Q \& A
+The current code supports multi-GPU settings.
+
 ## License and Citation
 The use of this software is released under [BSD-3](https://github.com/samaonline/Orthogonal-Convolutional-Neural-Networks/blob/master/LICENSE).
 ```
-@article{wang2019orthogonal,
+@inproceedings{wang2019orthogonal,
   title={Orthogonal Convolutional Neural Networks},
   author={Wang, Jiayun and Chen, Yubei and Chakraborty, Rudrasis and Yu, Stella X},
-  journal={arXiv preprint arXiv:1911.12207},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2019}
 }
 ```
