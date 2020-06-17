@@ -6,13 +6,13 @@ This is authors' re-implementation of the orthogonal convolutional neural networ
 "[Orthogonal Convolutional Neural Networks](https://arxiv.org/abs/1911.12207)"   
 [Jiayun Wang](http://pwang.pw/),&nbsp; [Yubei Chen](https://redwood.berkeley.edu/people/yubei-chen/),&nbsp;  [Rudrasis Chakraborty](https://rudra1988.github.io/),&nbsp; [Stella X. Yu](https://www1.icsi.berkeley.edu/~stellayu/)&nbsp; (UC Berkeley/ICSI)&nbsp; in IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020
 
-For quick addition of the orthogonal loss to your network, refer to [orth_dist](imagenet/utils.py#L21) and [deconv_orth_dist](imagenet/utils.py#L34).
+For quick addition of the orthogonal loss to your network, refer to [orth_dist](imagenet/utils.py#L42) and [deconv_orth_dist](imagenet/utils.py#L34).
 
 ## Requirements
 * [PyTorch](https://pytorch.org/) (version >= 0.4.1)
 
 ## Overall architecture
-This repo will consist of source code of experiments in the paper. Now we released the code for image classification.
+This repo will consist of source code of experiments in the paper. Now we released the code for image classification. For classification on your own datasets, just change the folder path and number of classes.
 
 ## Image classification
 
@@ -32,6 +32,10 @@ The current code supports multi-GPU settings.
 
 ## Q \& A
 Q: What is the difference between "orth_dist" and "deconv_orth_dist" ?
+A: As described in our paper, for orthogonalities in fully-connected layers (or certain convolution layers that share the orthogonal condition with fully-connected layers, e.g. kernel size 3x3 and stride 3), we apply "orth_dist". For other convolution layers, we apply "deconv_orth_dist".
+
+Q: Why are specific layers and convs chosen?
+A: Empirically we find that for the first conv layer (usually 3 rgb channels to 16/64/... channels), applying the orthogonal loss leads to instable performance. 
 
 ## License and Citation
 The use of this software is released under [BSD-3](LICENSE).
