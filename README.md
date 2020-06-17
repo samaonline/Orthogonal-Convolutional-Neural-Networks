@@ -32,9 +32,11 @@ The current code supports multi-GPU settings.
 
 ## Q \& A
 Q: What is the difference between "orth_dist" and "deconv_orth_dist" ?
+
 A: As described in our paper, for orthogonalities in fully-connected layers (or certain convolution layers that share the orthogonal condition with fully-connected layers, e.g. kernel size 3x3 and stride 3), we apply "orth_dist". For other convolution layers, we apply "deconv_orth_dist".
 
 Q: Why are specific layers and convs chosen?
+
 A: Empirically we find that for the first conv layer (usually 3 rgb channels to 16/64/... channels), applying the orthogonal loss leads to instable performance. 
 
 ## License and Citation
