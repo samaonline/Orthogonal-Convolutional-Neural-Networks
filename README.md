@@ -4,7 +4,9 @@
 ## Overview
 This is authors' re-implementation of the orthogonal convolutional neural networks/regularizers described in:  
 "[Orthogonal Convolutional Neural Networks](https://arxiv.org/abs/1911.12207)"   
-[Jiayun Wang](http://pwang.pw/),&nbsp; [Yubei Chen](https://redwood.berkeley.edu/people/yubei-chen/),&nbsp;  [Rudrasis Chakraborty](https://rudra1988.github.io/),&nbsp; [Stella X. Yu](https://www1.icsi.berkeley.edu/~stellayu/)&nbsp; (UC Berkeley/ICSI)&nbsp; 
+[Jiayun Wang](http://pwang.pw/),&nbsp; [Yubei Chen](https://redwood.berkeley.edu/people/yubei-chen/),&nbsp;  [Rudrasis Chakraborty](https://rudra1988.github.io/),&nbsp; [Stella X. Yu](https://www1.icsi.berkeley.edu/~stellayu/)&nbsp; (UC Berkeley/ICSI)&nbsp; in IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2020
+
+For quick addition of the orthogonal loss to your network, refer to [orth_dist](./blob/master/imagenet/utils.py#L21) and [deconv_orth_dist](./blob/master/imagenet/utils.py#L34).
 
 ## Requirements
 * [PyTorch](https://pytorch.org/) (version >= 0.4.1)
@@ -29,7 +31,7 @@ python main_orth50.py --dist-url 'tcp://127.0.0.1:1321' --dist-backend 'nccl' --
 The current code supports multi-GPU settings.
 
 ## Q \& A
-The current code supports multi-GPU settings.
+Q: What is the difference between "orth_dist" and "deconv_orth_dist" ?
 
 ## License and Citation
 The use of this software is released under [BSD-3](https://github.com/samaonline/Orthogonal-Convolutional-Neural-Networks/blob/master/LICENSE).
