@@ -46,6 +46,6 @@ The use of this software is released under [BSD-3](LICENSE).
   title={Orthogonal Convolutional Neural Networks},
   author={Wang, Jiayun and Chen, Yubei and Chakraborty, Rudrasis and Yu, Stella X},
   booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2019}
+  year={2020}
 }
 ```
