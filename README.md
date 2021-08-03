@@ -8,6 +8,9 @@ This is authors' re-implementation of the orthogonal convolutional neural networ
 
 For quick addition of the orthogonal loss to your network, refer to [orth_dist](imagenet/utils.py#L42) and [deconv_orth_dist](imagenet/utils.py#L34).
 
+## Updates
+As a stand-alone feature, we provide [code](https://github.com/samaonline/CNN-filter-similarity) to calculate filter similarities for CNNs (as described in Fig.1a/1c in the [paper](https://arxiv.org/abs/1911.12207)).
+
 ## Requirements
 * [PyTorch](https://pytorch.org/) (version >= 0.4.1)
 
